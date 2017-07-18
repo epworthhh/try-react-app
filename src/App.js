@@ -3,6 +3,23 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {counter: 0};
+  }
+
+  increaseCounter() {
+    setInterval(() => this.setState({counter: this.state.counter + 1}), 1000);
+  }
+
+  componentDidMount() {
+    this.interval = this.increaseCounter();
+  }
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
+
   render() {
     return (
       <div className="App">
@@ -11,7 +28,7 @@ class App extends Component {
           <h2>Welcome to React</h2>
         </div>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+          <p>Elapsed seconds counter: {this.state.counter}</p>
         </p>
       </div>
     );
