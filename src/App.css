@@ -14,8 +14,26 @@
   color: white;
 }
 
+.App-body {
+  background-color: #222;
+  color: white;
+  padding: 12px 0 30px 0;
+}
+
+.App-body button {
+  margin-left: 6px;
+}
+
 .App-intro {
   font-size: large;
+  padding: 18px 0;
+}
+
+ul {
+  display: inline-block;
+  margin-left: -150px;
+  max-width: 160px;
+  text-align: left;
 }
 
 @keyframes App-logo-spin {
