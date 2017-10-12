@@ -29,11 +29,21 @@
   padding: 18px 0;
 }
 
+.btn-close {
+  border: none;
+  background-color: #ffffff;
+  border-radius: 16px;
+}
+
 ul {
   display: inline-block;
   margin-left: -150px;
   max-width: 160px;
   text-align: left;
+}
+
+ul li {
+  margin-bottom: 4px;
 }
 
 @keyframes App-logo-spin {
