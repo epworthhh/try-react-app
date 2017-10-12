@@ -35,14 +35,14 @@
   border-radius: 16px;
 }
 
-ul {
+.todoList ul {
   display: inline-block;
   margin-left: -150px;
   max-width: 160px;
   text-align: left;
 }
 
-ul li {
+.todoList ul li {
   margin-bottom: 4px;
 }
 
