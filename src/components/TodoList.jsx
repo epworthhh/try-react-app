@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ItemList from './ItemList.jsx';
 
 class TodoList extends Component {
     
@@ -57,11 +58,8 @@ class TodoList extends Component {
           </form>
 
           <ul>
-            {this.state.items.map(item => (
-              <li key={item.id}>
-                {item.text}
-                <button className="btn-close" onClick={() => this.removeItem(item)}>X</button>
-              </li>
+            {this.state.items.map(item => (         
+              <ItemList key={item.id} item={item} removeItem={this.removeItem} /> 
             ))}
           </ul>
           <div>
